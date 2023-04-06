@@ -1,3 +1,3 @@
 #!/bin/bash
-#sends a request to that URL, and displays the size of the body of the response
-curl -sI "$1" | grep 'Content-Length:' | cut -f2 -d' '
+# send a request to an URL with curl, and displays the size of the body of the response
+curl -s "$1" | wc -c
